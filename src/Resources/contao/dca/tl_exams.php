@@ -87,7 +87,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
     // Palettes
     'palettes' => array
     (
-        'default' => '{examdetails_legend},exam_title,department,date,begin,regular_duration,allowed_auxiliaries,remarks;{lecturer_legend},lecturer_title,prename,lastname,university_mail,mobile;'
+        'default' => '{examdetails_legend},exam_title,department,date,begin,regular_duration,allowed_auxiliaries,remarks;'
     ),
 
     // Fields
@@ -101,7 +101,6 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         'exam_title' => array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['exam_title'],
-            'explanation' => &$GLOBALS['TL_LANG']['tl_exams']['exam_title_explanation'],
             'inputType' => 'text',
             'search' => 'true',
             'sorting' => 'true',
