@@ -30,12 +30,12 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         'sorting' => array
         (
             'mode' => 0,
-            'fields' => array('title')
+            'fields' => array('exam_title')
         ),
 
         'label' => array
         (
-            'fields' => array('title'),
+            'fields' => array('exam_title'),
             'format' => '%s'
         ),
 
@@ -95,7 +95,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
     (
         'exam_id' => array
         (
-            'sql'                     => "int(11) unsigned NOT NULL auto_increment"
+            'sql' => "int(11) unsigned NOT NULL auto_increment"
         ),
 
         'exam_title' => array
@@ -105,7 +105,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
             'search' => 'true',
             'sorting' => 'true',
             'flag' => '1',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'maxlength'=>255),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'maxlength'=>255),
             'sql' => "varchar(255) NOT NULL default ''"
         ),
 
@@ -113,7 +113,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['date'],
             'inputType' => 'text',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'date', 'datepicker'=>true),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'date', 'datepicker'=>true),
             'sql' => "varchar(10) NOT NULL default ''"
         ),
 
@@ -121,7 +121,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['begin'],
             'inputType' => 'text',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'time', 'maxlength'=>10),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'time', 'maxlength'=>10),
             'sql' => "varchar(10) NOT NULL default ''"
         ),
 
@@ -129,7 +129,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['regular_duration'],
             'inputType' => 'text',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'natural', 'maxlength'=>3),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'rgxp'=>'natural', 'maxlength'=>3),
             'sql' => "int(3) NOT NULL default ''"
         ),
 
@@ -137,7 +137,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['allowed_auxiliaries'],
             'inputType' => 'text',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'maxlength'=>255),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'mandatory'=>'true', 'maxlength'=>255),
             'sql' => "varchar(255) NOT NULL default ''"
         ),
 
@@ -145,7 +145,7 @@ $GLOBALS['TL_DCA']['tl_exams'] = array
         (
             'label' => &$GLOBALS['TL_LANG']['tl_exams']['remarks'],
             'inputType' => 'text',
-            'eval' => array('feGroup'=>'study', 'feEditable'=>'true', 'feViewable'=>'true', 'maxlength'=>255),
+            'eval' => array('feEditable'=>'true', 'feViewable'=>'true', 'maxlength'=>255),
             'sql' => "varchar(255) NOT NULL default ''"
         )
 
